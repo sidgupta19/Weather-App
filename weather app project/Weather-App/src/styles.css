@@ -1,0 +1,271 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/078/715/original/pexels-stein-egil-liland-15487268.jpg?1682356023");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  border-radius: 10px;
+  border: 1px solid rgba(199, 215, 182, 0.3);
+  background: linear-gradient(
+    135deg,
+    rgba(245, 247, 250, 0.8) 0%,
+    rgba(195, 207, 226, 0.8) 100%
+  );
+  max-width: 65%;
+  margin-top: 40px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 17px;
+  margin-top: 15px;
+}
+
+.header {
+  text-align: center;
+  margin: 25px 0px -25px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-form {
+  display: block;
+  margin: 0 auto;
+}
+
+.location {
+  border: 1px solid black;
+  border-radius: 50px;
+  background: linear-gradient(
+    135deg,
+    rgba(245, 247, 250, 0.7) 0%,
+    rgba(195, 207, 226, 0.7) 100%
+  );
+  padding: 1px;
+  box-shadow: 0px 6px 20px 1px rgba(0, 0, 0, 0.2);
+  transition: all 200ms ease-in-out;
+}
+
+.location:hover {
+  background: #c4d0e3;
+  opacity: 70%;
+  color: white;
+}
+
+.fa-regular.fa-compass {
+  text-align: center;
+  margin: 8px;
+}
+
+.location-form {
+  border: 1px solid black;
+  border-radius: 10px;
+  background: linear-gradient(
+    135deg,
+    rgba(245, 247, 250, 0.8) 0%,
+    rgba(195, 207, 226, 0.8) 100%
+  );
+  padding: 5px 186px;
+  box-shadow: 0px 6px 20px 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 55%;
+}
+
+.location-form::placeholder {
+  color: black;
+}
+
+.search {
+  border: 1px solid black;
+  border-radius: 10px;
+  background: linear-gradient(
+    135deg,
+    rgba(245, 247, 250, 0.8) 0%,
+    rgba(195, 207, 226, 0.8) 100%
+  );
+  transition: all 200ms ease-in-out;
+  box-shadow: 0px 6px 20px 1px rgba(0, 0, 0, 0.2);
+  padding: 5px 10px;
+}
+
+.search:hover {
+  color: rgb(55, 55, 55);
+  background: #c4d0e3;
+}
+
+.current-weather {
+  font-size: 25px;
+  text-align: right;
+  margin: -197px -70px;
+  padding: 0px 103px;
+}
+
+.weather-icon {
+  width: 30%;
+  margin: -40px 37px;
+  margin-top: 14px;
+}
+
+.description {
+  margin-top: 7px;
+  margin-right: 83px;
+  font-size: 19px;
+  position: relative;
+}
+
+.high-low {
+  margin: -20px 68px 0 0;
+  font-size: 18px;
+}
+
+.low {
+  margin-right: 9px;
+}
+
+.city {
+  font-size: 40px;
+  margin: 15px 40px 15px;
+  padding-left: 34px;
+}
+
+.celsius {
+  font-size: 20px;
+  font-weight: 300;
+  position: relative;
+  top: -24px;
+  left: -8px;
+}
+
+.temperature-value {
+  font-size: 55px;
+}
+
+.unit-value {
+  font-size: 20px;
+  position: relative;
+  top: -17px;
+  margin: 0 -8px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 135px 0px 0px 45px;
+  font-size: 18px;
+}
+
+i {
+  padding: 2px;
+  margin: 10px;
+}
+
+i.drop-icon {
+  margin: 10px 11px;
+}
+
+i.temp-icon {
+  margin: 10px 12px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+  margin: 15px;
+}
+
+.forecast-container {
+  font-size: 25px;
+  margin: 40px 30px;
+}
+
+.forecast {
+  margin: 40px 30px;
+  background: radial-gradient(
+    circle at 0% 0.5%,
+    rgba(241, 241, 242, 0.5) 0.1%,
+    rgba(224, 226, 228, 0.5) 100.2%
+  );
+  border: 1px solid rgba(205, 224, 187, 0.5);
+  border-radius: 20px;
+}
+
+.forecast i {
+  font-size: 38px;
+}
+
+.temperatures {
+  font-size: 17px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+.signature {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  max-width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+a.signature {
+  font-weight: 600;
+  color: black;
+}
+
+.container-days {
+  width: 85%;
+  display: block;
+  margin: 0 auto;
+  margin: 25px 48px;
+  padding: 10px 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(245, 247, 250, 0.5) 0%,
+    rgba(195, 207, 226, 0.5) 100%
+  );
+  border-radius: 7px;
+  border: 1px solid #c5cbd8;
+}
+
+.row {
+  flex-wrap: nowrap;
+  margin-left: -19px;
+  margin-right: -6px;
+  margin: -6px -6px -6px -19px;
+}
+
+.col-2 {
+  padding: 20px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin: 0 1px;
+}
+
+.forecast-day {
+  text-align: center;
+}
+
+.forecast-temperatures {
+  text-align: center;
+  font-size: 14px;
+}
+
+.forecast-min-temp {
+  opacity: 0.7;
+}
+
+.high {
+  margin-right: 5px;
+}

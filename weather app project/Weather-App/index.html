@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/85fe3293b5.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="src/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="header">
+    <form id="search-form">
+      <button class="location" type="button">
+        <i class="fa-regular fa-compass"></i>
+      </button>
+      <input class="location-form" type="text" placeholder=" Type a location..." />
+      <button class="search" type="submit">
+        search
+      </button>
+    </form>
+  </div>
+  <div class="container">
+    <h1 class="current-time"></h1>
+    <div class="city">
+      <span class="city-name">
+        Prague
+      </span>
+      <div class="city-temperature">
+        <span class="temperature-value">
+          20
+        </span>
+        <span class="celsius">°C</span>
+      </div>
+    </div>
+    <div class="current-weather">
+      <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png" class="weather-icon"
+        id="weather-icon" alt="Clear"></img>
+      <br />
+      <p class="description">
+        Sunny
+      </p>
+      <br />
+      <div class="high-low">
+        <span class="high">High: <span class="max">23</span>°C</span>
+        <div class="low">Low: <span class="min">15</span>°C</div>
+      </div>
+    </div>
+    <ul>
+      <li>
+        <i class="fa-solid fa-temperature-three-quarters temp-icon" style="color: #d81818;"></i>
+        Feels like: <span class="feels-like" 3>15</span>°C
+      </li>
+      <li>
+        <i class="fa-solid fa-droplet drop-icon" style="color: #89a9e1;"></i>
+        Humidity: <span class="humidity">70</span>%
+
+      </li>
+      <li>
+        <i class="fa-solid fa-wind" style="color: #97a6be;"></i>
+        Wind: <span class="wind">15</span> km/h
+      </li>
+    </ul>
+    <hr />
+    <div class="container-days">
+      <div id="forecast-container"></div>
+    </div>
+  </div>
+  </div>
+  <p class="signature"><a class="signature" href="https://github.com/sidgupta19"></a> by
+    Siddharth Gupta</p>
+  <script src="src/index.js"></script>
+</body>
+
+</html>
